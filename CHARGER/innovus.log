@@ -1,0 +1,1771 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.11-s130_1, built Wed Aug 5 15:53:11 PDT 2020
+Options:	
+Date:		Mon Jan  6 15:55:42 2025
+Host:		fatima.novalocal (x86_64 w/Linux 3.10.0-1160.99.1.el7.x86_64) (1core*4cpus*Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz 16384KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+<CMD> set conf_qxconf_file NULL
+<CMD> set conf_qxlib_file NULL
+<CMD> set defHierChar /
+Set Default Input Pin Transition as 0.1 ps.
+<CMD> set delaycal_input_transition_delay 0.1ps
+<CMD> set distributed_client_message_echo 1
+<CMD> set fpIsMaxIoHeight 0
+<CMD> set gpsPrivate::dpgNewAddBufsDBUpdate 1
+<CMD> set gpsPrivate::lsgEnableNewDbApiInRestruct 1
+<CMD> set init_gnd_net dgnd
+<CMD> set init_lef_file {../lef_libs/header8m2t_V55.lef ../lef_libs/fsc0h_d_generic_core.lef ../lef_libs/FSC0H_D_GENERIC_CORE_ANT_V55.lef}
+<CMD> set init_mmmc_file counter4bit.view
+<CMD> set init_oa_search_lib {}
+<CMD> set init_pwr_net dvdd
+<CMD> set init_verilog ../../SYNTHESIS/COUNTER4BIT/counter4bit_synth.v
+<CMD> set pegDefaultResScaleFactor 1.000000
+<CMD> set pegDetailResScaleFactor 1.000000
+<CMD> set timing_library_float_precision_tol 0.000010
+<CMD> set timing_library_load_pin_cap_indices {}
+<CMD> set tso_post_client_restore_command {update_timing ; write_eco_opt_db ;}
+<CMD> save_global BATCHARGERctr.globals
+<CMD> set init_verilog ../../SYNTHESIS/CHARGER/BATCHARGERctr_synth_final.v
+<CMD> set init_mmmc_file BATCHARGERctr.view
+<CMD> init_design
+#% Begin Load MMMC data ... (date=01/06 15:57:56, mem=616.4M)
+#% End Load MMMC data ... (date=01/06 15:57:56, total cpu=0:00:00.0, real=0:00:00.0, peak res=616.6M, current mem=616.6M)
+SS_RC FF_RC
+
+Loading LEF file ../lef_libs/header8m2t_V55.lef ...
+
+Loading LEF file ../lef_libs/fsc0h_d_generic_core.lef ...
+WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file ../lef_libs/fsc0h_d_generic_core.lef at line 1.
+Set DBUPerIGU to M2 pitch 400.
+WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file ../lef_libs/fsc0h_d_generic_core.lef at line 41658.
+
+Loading LEF file ../lef_libs/FSC0H_D_GENERIC_CORE_ANT_V55.lef ...
+**WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal7' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-119):	LAYER 'metal8' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-119' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN2B1CHD' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN2B1EHD' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN2B1HHD' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN2B1KHD' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN2CHD' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN2EHD' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN2HHD' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN2KHD' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3B1CHD' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3B1EHD' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3B1HHD' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3B2BHD' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3B2EHD' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3B2HHD' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3CHD' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3EHD' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN3HHD' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN4B1BHD' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN4B1EHD' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'AN4B1HHD' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+WARNING (LEFPARS-2003): BUSBITCHARS is a required statement on LEF file with version 5.5 and earlier.
+Without BUSBITCHARS defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file ../lef_libs/FSC0H_D_GENERIC_CORE_ANT_V55.lef at line 17898.
+WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+Without DIVIDECHAR defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file ../lef_libs/FSC0H_D_GENERIC_CORE_ANT_V55.lef at line 17898.
+**WARN: (IMPLF-61):	407 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-61' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTHD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+viaInitial starts at Mon Jan  6 15:57:56 2025
+viaInitial ends at Mon Jan  6 15:57:56 2025
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from BATCHARGERctr.view
+Reading SS_LIB timing library '/afs/.ist.utl.pt/users/0/4/ist1100004/DIGITAL/SYNTHESIS/synthesis_libs/fsc0h_d_generic_core_ss1p08v125c.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTHD'. The cell will only be used for analysis. (File /afs/.ist.utl.pt/users/0/4/ist1100004/DIGITAL/SYNTHESIS/synthesis_libs/fsc0h_d_generic_core_ss1p08v125c.lib)
+Read 407 cells in library 'fsc0h_d_generic_core_ss1p08v125c' 
+Reading FF_LIB timing library '/afs/.ist.utl.pt/users/0/4/ist1100004/DIGITAL/SYNTHESIS/synthesis_libs/fsc0h_d_generic_core_ff1p32vm40c.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTHD'. The cell will only be used for analysis. (File /afs/.ist.utl.pt/users/0/4/ist1100004/DIGITAL/SYNTHESIS/synthesis_libs/fsc0h_d_generic_core_ff1p32vm40c.lib)
+Read 407 cells in library 'fsc0h_d_generic_core_ff1p32vm40c' 
+*** End library_loading (cpu=0.09min, real=0.15min, mem=29.0M, fe_cpu=0.77min, fe_real=2.38min, fe_mem=777.3M) ***
+#% Begin Load netlist data ... (date=01/06 15:58:05, mem=646.7M)
+*** Begin netlist parsing (mem=777.3M) ***
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4EHD' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4EHD' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3EHD' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3EHD' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3CHD' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3CHD' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2KHD' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2KHD' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HHD' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HHD' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2EHD' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2EHD' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2CHD' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2CHD' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XNR4EHD' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XNR4EHD' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XNR3EHD' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XNR3EHD' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XNR3CHD' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XNR3CHD' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 407 new cells from 2 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../../SYNTHESIS/CHARGER/BATCHARGERctr_synth_final.v'
+
+*** Memory Usage v#2 (Current mem = 777.328M, initial mem = 272.281M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=777.3M) ***
+#% End Load netlist data ... (date=01/06 15:58:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=656.0M, current mem=656.0M)
+Top level cell is BATCHARGERctr.
+Hooked 814 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell BATCHARGERctr ...
+*** Netlist is unique.
+** info: there are 823 modules.
+** info: there are 291 stdCell insts.
+
+*** Memory Usage v#2 (Current mem = 832.254M, initial mem = 272.281M) ***
+**WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner_ab' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_o' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_n' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_k' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_bs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_as' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corega_3200' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'core_2800' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'core_3200' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 2 active RC Corners ...
+Reading Capacitance Table File captable.cap ...
+Cap table was created using Encounter 14.26-s039_1.
+Process name: MIXED_MODE_RFCMOS13_1P8M2T_MMC_FSG_TOP_METAL20K_L130E.
+**WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2771):	Via ALVIA specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+Allocated an empty WireEdgeEnlargement table in SS_RC [7].
+Allocated an empty WireEdgeEnlargement table in SS_RC [8].
+**WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+Reading Capacitance Table File captable.cap ...
+Cap table was created using Encounter 14.26-s039_1.
+Process name: MIXED_MODE_RFCMOS13_1P8M2T_MMC_FSG_TOP_METAL20K_L130E.
+**WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2771):	Via ALVIA specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+Allocated an empty WireEdgeEnlargement table in FF_RC [7].
+Allocated an empty WireEdgeEnlargement table in FF_RC [8].
+**WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: WC_AN
+    RC-Corner Name        : SS_RC
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : 'captable.cap'
+    RC-Corner PreRoute Res Factor         : 1.1
+    RC-Corner PreRoute Cap Factor         : 1.1
+    RC-Corner PostRoute Res Factor        : 1.1 {1.1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1.1 {1.1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1.1 {1.1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1.1
+    RC-Corner PreRoute Clock Cap Factor   : 1.1
+    RC-Corner PostRoute Clock Cap Factor  : 1.1 {1.1 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 1.1 {1.1 1 1} 
+ 
+ Analysis View: BC_AN
+    RC-Corner Name        : FF_RC
+    RC-Corner Index       : 1
+    RC-Corner Temperature : -40 Celsius
+    RC-Corner Cap Table   : 'captable.cap'
+    RC-Corner PreRoute Res Factor         : 0.9
+    RC-Corner PreRoute Cap Factor         : 0.9
+    RC-Corner PostRoute Res Factor        : 0.9 {0.9 1 1}
+    RC-Corner PostRoute Cap Factor        : 0.9 {0.9 1 1}
+    RC-Corner PostRoute XCap Factor       : 0.9 {0.9 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 0.9
+    RC-Corner PreRoute Clock Cap Factor   : 0.9
+    RC-Corner PostRoute Clock Cap Factor  : 0.9 {0.9 1 1} 
+    RC-Corner PostRoute Clock Res Factor  : 0.9 {0.9 1 1} 
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '../../SYNTHESIS/CHARGER/BATCHARGERctr_synth.sdc' ...
+Current (total cpu=0:00:48.1, real=0:02:26, peak res=918.0M, current mem=918.0M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File ../../SYNTHESIS/CHARGER/BATCHARGERctr_synth.sdc, Line 9).
+
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File ../../SYNTHESIS/CHARGER/BATCHARGERctr_synth.sdc, Line 10).
+
+INFO (CTE): Reading of timing constraints file ../../SYNTHESIS/CHARGER/BATCHARGERctr_synth.sdc completed, with 2 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=925.5M, current mem=925.5M)
+Current (total cpu=0:00:48.2, real=0:02:26, peak res=925.5M, current mem=925.5M)
+Reading timing constraints file '../../SYNTHESIS/CHARGER/BATCHARGERctr_synth.sdc' ...
+Current (total cpu=0:00:48.2, real=0:02:26, peak res=925.5M, current mem=925.5M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File ../../SYNTHESIS/CHARGER/BATCHARGERctr_synth.sdc, Line 9).
+
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File ../../SYNTHESIS/CHARGER/BATCHARGERctr_synth.sdc, Line 10).
+
+INFO (CTE): Reading of timing constraints file ../../SYNTHESIS/CHARGER/BATCHARGERctr_synth.sdc completed, with 2 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=925.8M, current mem=925.8M)
+Current (total cpu=0:00:48.3, real=0:02:26, peak res=925.8M, current mem=925.8M)
+Total number of combinational cells: 276
+Total number of sequential cells: 118
+Total number of tristate cells: 13
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFCKEHD BUFCHD BUFCKHHD BUFCKGHD BUFCKIHD BUFCKJHD BUFCKLHD BUFCKKHD BUFCKMHD BUFCKNHD BUFCKQHD BUFEHD BUFDHD BUFHHD BUFGHD BUFIHD BUFJHD BUFKHD BUFLHD BUFMHD BUFNHD BUFQHD
+Total number of usable buffers: 22
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INVCKDHD INVCHD INVCKGHD INVCKHHD INVCKIHD INVCKJHD INVCKKHD INVCKLHD INVCKMHD INVCKNHD INVCKQHD INVDHD INVGHD INVHHD INVJHD INVIHD INVKHD INVLHD INVMHD INVNHD INVQHD
+Total number of usable inverters: 21
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DELAKHD DELBKHD DELDKHD DELCKHD
+Total number of identified usable delay cells: 4
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-58           407  MACRO '%s' has been found in the databas...
+WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-119            8  LAYER '%s' has been found in the databas...
+WARNING   IMPFP-3961          15  The techSite '%s' has no related standar...
+WARNING   IMPEXT-2710          2  Basic Cap table for layer M%d is ignored...
+WARNING   IMPEXT-2760          2  Layer M%d specified in the cap table is ...
+WARNING   IMPEXT-2771          2  Via %s specified in the cap table is ign...
+WARNING   IMPVL-159          814  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   TCLCMD-1461          4  Skipped unsupported command: %s          
+WARNING   TECHLIB-302          2  No function defined for cell '%s'. The c...
+*** Message Summary: 1258 warning(s), 0 error(s)
+
+invalid command name "verbose"
+<CMD> check_timing -verbose
+AAE DB initialization (MEM=1133.5 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: BATCHARGERctr
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=1154.88)
+Total number of fetched objects 392
+End delay calculation. (MEM=1203.01 CPU=0:00:00.2 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1175.93 CPU=0:00:00.4 REAL=0:00:01.0)
+     +----------------------------------------------------------------------------------+ 
+     |                               TIMING CHECK SUMMARY                               | 
+     |----------------------------------------------------------------------------------| 
+     |       Warning        |              Warning Description               |  Number  | 
+     |                      |                                                |    of    | 
+     |                      |                                                | Warnings | 
+     |----------------------+------------------------------------------------+----------| 
+     | ideal_clock_waveform | Clock waveform is ideal                        |        1 | 
+     | no_drive             | No drive assertion                             |       78 | 
+     | no_input_delay       | No input delay assertion with respect to clock |       77 | 
+     | uncons_endpoint      | Unconstrained signal arriving at end point     |        8 | 
+     +----------------------------------------------------------------------------------+ 
+     +----------------------------------------------------------------------------+ 
+     |                            TIMING CHECK DETAIL                             | 
+     |----------------------------------------------------------------------------| 
+     |        Pin        |                    Warning                     |  View | 
+     |-------------------+------------------------------------------------+-------| 
+     |      vbat[7]      | No drive assertion                             | WC_AN | 
+     |      vbat[6]      | No drive assertion                             | WC_AN | 
+     |      vbat[5]      | No drive assertion                             | WC_AN | 
+     |      vbat[4]      | No drive assertion                             | WC_AN | 
+     |      vbat[3]      | No drive assertion                             | WC_AN | 
+     |      vbat[2]      | No drive assertion                             | WC_AN | 
+     |      vbat[1]      | No drive assertion                             | WC_AN | 
+     |      vbat[0]      | No drive assertion                             | WC_AN | 
+     |      ibat[7]      | No drive assertion                             | WC_AN | 
+     |      ibat[6]      | No drive assertion                             | WC_AN | 
+     |      ibat[5]      | No drive assertion                             | WC_AN | 
+     |      ibat[4]      | No drive assertion                             | WC_AN | 
+     |      ibat[3]      | No drive assertion                             | WC_AN | 
+     |      ibat[2]      | No drive assertion                             | WC_AN | 
+     |      ibat[1]      | No drive assertion                             | WC_AN | 
+     |      ibat[0]      | No drive assertion                             | WC_AN | 
+     |      tbat[7]      | No drive assertion                             | WC_AN | 
+     |      tbat[6]      | No drive assertion                             | WC_AN | 
+     |      tbat[5]      | No drive assertion                             | WC_AN | 
+     |      tbat[4]      | No drive assertion                             | WC_AN | 
+     |      tbat[3]      | No drive assertion                             | WC_AN | 
+     |      tbat[2]      | No drive assertion                             | WC_AN | 
+     |      tbat[1]      | No drive assertion                             | WC_AN | 
+     |      tbat[0]      | No drive assertion                             | WC_AN | 
+     |    vcutoff[7]     | No drive assertion                             | WC_AN | 
+     |    vcutoff[6]     | No drive assertion                             | WC_AN | 
+     |    vcutoff[5]     | No drive assertion                             | WC_AN | 
+     |    vcutoff[4]     | No drive assertion                             | WC_AN | 
+     |    vcutoff[3]     | No drive assertion                             | WC_AN | 
+     |    vcutoff[2]     | No drive assertion                             | WC_AN | 
+     |    vcutoff[1]     | No drive assertion                             | WC_AN | 
+     |    vcutoff[0]     | No drive assertion                             | WC_AN | 
+     |    vpreset[7]     | No drive assertion                             | WC_AN | 
+     |    vpreset[6]     | No drive assertion                             | WC_AN | 
+     |    vpreset[5]     | No drive assertion                             | WC_AN | 
+     |    vpreset[4]     | No drive assertion                             | WC_AN | 
+     |    vpreset[3]     | No drive assertion                             | WC_AN | 
+     |    vpreset[2]     | No drive assertion                             | WC_AN | 
+     |    vpreset[1]     | No drive assertion                             | WC_AN | 
+     |    vpreset[0]     | No drive assertion                             | WC_AN | 
+     |    tempmin[7]     | No drive assertion                             | WC_AN | 
+     |    tempmin[6]     | No drive assertion                             | WC_AN | 
+     |    tempmin[5]     | No drive assertion                             | WC_AN | 
+     |    tempmin[4]     | No drive assertion                             | WC_AN | 
+     |    tempmin[3]     | No drive assertion                             | WC_AN | 
+     |    tempmin[2]     | No drive assertion                             | WC_AN | 
+     |    tempmin[1]     | No drive assertion                             | WC_AN | 
+     |    tempmin[0]     | No drive assertion                             | WC_AN | 
+     |    tempmax[7]     | No drive assertion                             | WC_AN | 
+     |    tempmax[6]     | No drive assertion                             | WC_AN | 
+     |    tempmax[5]     | No drive assertion                             | WC_AN | 
+     |    tempmax[4]     | No drive assertion                             | WC_AN | 
+     |    tempmax[3]     | No drive assertion                             | WC_AN | 
+     |    tempmax[2]     | No drive assertion                             | WC_AN | 
+     |    tempmax[1]     | No drive assertion                             | WC_AN | 
+     |    tempmax[0]     | No drive assertion                             | WC_AN | 
+     |      tmax[7]      | No drive assertion                             | WC_AN | 
+     |      tmax[6]      | No drive assertion                             | WC_AN | 
+     |      tmax[5]      | No drive assertion                             | WC_AN | 
+     |      tmax[4]      | No drive assertion                             | WC_AN | 
+     |      tmax[3]      | No drive assertion                             | WC_AN | 
+     |      tmax[2]      | No drive assertion                             | WC_AN | 
+     |      tmax[1]      | No drive assertion                             | WC_AN | 
+     |      tmax[0]      | No drive assertion                             | WC_AN | 
+     |      iend[7]      | No drive assertion                             | WC_AN | 
+     |      iend[6]      | No drive assertion                             | WC_AN | 
+     |      iend[5]      | No drive assertion                             | WC_AN | 
+     |      iend[4]      | No drive assertion                             | WC_AN | 
+     |      iend[3]      | No drive assertion                             | WC_AN | 
+     |      iend[2]      | No drive assertion                             | WC_AN | 
+     |      iend[1]      | No drive assertion                             | WC_AN | 
+     |      iend[0]      | No drive assertion                             | WC_AN | 
+     |        clk        | No drive assertion                             | WC_AN | 
+     |        en         | No drive assertion                             | WC_AN | 
+     |       rstz        | No drive assertion                             | WC_AN | 
+     |       vtok        | No drive assertion                             | WC_AN | 
+     |       dvdd        | No drive assertion                             | WC_AN | 
+     |       dgnd        | No drive assertion                             | WC_AN | 
+     |      vbat[7]      | No input delay assertion with respect to clock | WC_AN | 
+     |      vbat[6]      | No input delay assertion with respect to clock | WC_AN | 
+     |      vbat[5]      | No input delay assertion with respect to clock | WC_AN | 
+     |      vbat[4]      | No input delay assertion with respect to clock | WC_AN | 
+     |      vbat[3]      | No input delay assertion with respect to clock | WC_AN | 
+     |      vbat[2]      | No input delay assertion with respect to clock | WC_AN | 
+     |      vbat[1]      | No input delay assertion with respect to clock | WC_AN | 
+     |      vbat[0]      | No input delay assertion with respect to clock | WC_AN | 
+     |      ibat[7]      | No input delay assertion with respect to clock | WC_AN | 
+     |      ibat[6]      | No input delay assertion with respect to clock | WC_AN | 
+     |      ibat[5]      | No input delay assertion with respect to clock | WC_AN | 
+     |      ibat[4]      | No input delay assertion with respect to clock | WC_AN | 
+     |      ibat[3]      | No input delay assertion with respect to clock | WC_AN | 
+     |      ibat[2]      | No input delay assertion with respect to clock | WC_AN | 
+     |      ibat[1]      | No input delay assertion with respect to clock | WC_AN | 
+     |      ibat[0]      | No input delay assertion with respect to clock | WC_AN | 
+     |      tbat[7]      | No input delay assertion with respect to clock | WC_AN | 
+     |      tbat[6]      | No input delay assertion with respect to clock | WC_AN | 
+     |      tbat[5]      | No input delay assertion with respect to clock | WC_AN | 
+     |      tbat[4]      | No input delay assertion with respect to clock | WC_AN | 
+     |      tbat[3]      | No input delay assertion with respect to clock | WC_AN | 
+     |      tbat[2]      | No input delay assertion with respect to clock | WC_AN | 
+     |      tbat[1]      | No input delay assertion with respect to clock | WC_AN | 
+     |      tbat[0]      | No input delay assertion with respect to clock | WC_AN | 
+     |    vcutoff[7]     | No input delay assertion with respect to clock | WC_AN | 
+     |    vcutoff[6]     | No input delay assertion with respect to clock | WC_AN | 
+     |    vcutoff[5]     | No input delay assertion with respect to clock | WC_AN | 
+     |    vcutoff[4]     | No input delay assertion with respect to clock | WC_AN | 
+     |    vcutoff[3]     | No input delay assertion with respect to clock | WC_AN | 
+     |    vcutoff[2]     | No input delay assertion with respect to clock | WC_AN | 
+     |    vcutoff[1]     | No input delay assertion with respect to clock | WC_AN | 
+     |    vcutoff[0]     | No input delay assertion with respect to clock | WC_AN | 
+     |    vpreset[7]     | No input delay assertion with respect to clock | WC_AN | 
+     |    vpreset[6]     | No input delay assertion with respect to clock | WC_AN | 
+     |    vpreset[5]     | No input delay assertion with respect to clock | WC_AN | 
+     |    vpreset[4]     | No input delay assertion with respect to clock | WC_AN | 
+     |    vpreset[3]     | No input delay assertion with respect to clock | WC_AN | 
+     |    vpreset[2]     | No input delay assertion with respect to clock | WC_AN | 
+     |    vpreset[1]     | No input delay assertion with respect to clock | WC_AN | 
+     |    vpreset[0]     | No input delay assertion with respect to clock | WC_AN | 
+     |    tempmin[7]     | No input delay assertion with respect to clock | WC_AN | 
+     |    tempmin[6]     | No input delay assertion with respect to clock | WC_AN | 
+     |    tempmin[5]     | No input delay assertion with respect to clock | WC_AN | 
+     |    tempmin[4]     | No input delay assertion with respect to clock | WC_AN | 
+     |    tempmin[3]     | No input delay assertion with respect to clock | WC_AN | 
+     |    tempmin[2]     | No input delay assertion with respect to clock | WC_AN | 
+     |    tempmin[1]     | No input delay assertion with respect to clock | WC_AN | 
+     |    tempmin[0]     | No input delay assertion with respect to clock | WC_AN | 
+     |    tempmax[7]     | No input delay assertion with respect to clock | WC_AN | 
+     |    tempmax[6]     | No input delay assertion with respect to clock | WC_AN | 
+     |    tempmax[5]     | No input delay assertion with respect to clock | WC_AN | 
+     |    tempmax[4]     | No input delay assertion with respect to clock | WC_AN | 
+     |    tempmax[3]     | No input delay assertion with respect to clock | WC_AN | 
+     |    tempmax[2]     | No input delay assertion with respect to clock | WC_AN | 
+     |    tempmax[1]     | No input delay assertion with respect to clock | WC_AN | 
+     |    tempmax[0]     | No input delay assertion with respect to clock | WC_AN | 
+     |      tmax[7]      | No input delay assertion with respect to clock | WC_AN | 
+     |      tmax[6]      | No input delay assertion with respect to clock | WC_AN | 
+     |      tmax[5]      | No input delay assertion with respect to clock | WC_AN | 
+     |      tmax[4]      | No input delay assertion with respect to clock | WC_AN | 
+     |      tmax[3]      | No input delay assertion with respect to clock | WC_AN | 
+     |      tmax[2]      | No input delay assertion with respect to clock | WC_AN | 
+     |      tmax[1]      | No input delay assertion with respect to clock | WC_AN | 
+     |      tmax[0]      | No input delay assertion with respect to clock | WC_AN | 
+     |      iend[7]      | No input delay assertion with respect to clock | WC_AN | 
+     |      iend[6]      | No input delay assertion with respect to clock | WC_AN | 
+     |      iend[5]      | No input delay assertion with respect to clock | WC_AN | 
+     |      iend[4]      | No input delay assertion with respect to clock | WC_AN | 
+     |      iend[3]      | No input delay assertion with respect to clock | WC_AN | 
+     |      iend[2]      | No input delay assertion with respect to clock | WC_AN | 
+     |      iend[1]      | No input delay assertion with respect to clock | WC_AN | 
+     |      iend[0]      | No input delay assertion with respect to clock | WC_AN | 
+     |        en         | No input delay assertion with respect to clock | WC_AN | 
+     |       rstz        | No input delay assertion with respect to clock | WC_AN | 
+     |       vtok        | No input delay assertion with respect to clock | WC_AN | 
+     |       dvdd        | No input delay assertion with respect to clock | WC_AN | 
+     |       dgnd        | No input delay assertion with respect to clock | WC_AN | 
+     |        cc         | Unconstrained signal arriving at end point     | WC_AN | 
+     |        tc         | Unconstrained signal arriving at end point     | WC_AN | 
+     |        cv         | Unconstrained signal arriving at end point     | WC_AN | 
+     | tmonen_reg_reg/RB | Unconstrained signal arriving at end point     | WC_AN | 
+     |      imonen       | Unconstrained signal arriving at end point     | WC_AN | 
+     |      vmonen       | Unconstrained signal arriving at end point     | WC_AN | 
+     |      tmonen       | Unconstrained signal arriving at end point     | WC_AN | 
+     |        so         | Unconstrained signal arriving at end point     | WC_AN | 
+     +----------------------------------------------------------------------------+ 
+     +------------------+ 
+     |   TIMING CHECK   | 
+     |   IDEAL CLOCKS   | 
+     |------------------| 
+     |  Clock   |  View | 
+     | Waveform |       | 
+     |----------+-------| 
+     |   clk    | WC_AN | 
+     +------------------+ 
+<CMD> checkDesign -all
+Creating directory checkDesign.
+Estimated cell power/ground rail width = 0.400 um
+Begin checking placement ... (start mem=1175.9M, init mem=1208.0M)
+*info: Recommended don't use cell = 0           
+*info: Placed = 0             
+*info: Unplaced = 291         
+Placement Density:70.20%(2783/3964)
+Placement Density (including fixed std cells):70.20%(2783/3964)
+Finished checkPlace (total: cpu=0:00:00.1, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1208.0M)
+############################################################################
+# Innovus Netlist Design Rule Check
+# Mon Jan  6 16:00:59 2025
+
+############################################################################
+Design: BATCHARGERctr
+
+------ Design Summary:
+Total Standard Cell Number   (cells) : 291
+Total Block Cell Number      (cells) : 0
+Total I/O Pad Cell Number    (cells) : 0
+Total Standard Cell Area     ( um^2) : 2782.72
+Total Block Cell Area        ( um^2) : 0.00
+Total I/O Pad Cell Area      ( um^2) : 0.00
+
+------ Design Statistics:
+
+Number of Instances            : 291
+Number of Non-uniquified Insts : 277
+Number of Nets                 : 393
+Average number of Pins per Net : 3.05
+Maximum number of Pins in Net  : 24
+
+------ I/O Port summary
+
+Number of Primary I/O Ports    : 85
+Number of Input Ports          : 78
+Number of Output Ports         : 7
+Number of Bidirectional Ports  : 0
+Number of Power/Ground Ports   : 0
+Number of Floating Ports                     *: 0
+Number of Ports Connected to Multiple Pads   *: 0
+Number of Ports Connected to Core Instances   : 85
+**WARN: (IMPREPO-202):	There are 85 Ports connected to core instances.
+
+------ Design Rule Checking:
+
+Number of Output Pins connect to Power/Ground *: 0
+Number of Insts with Input Pins tied together ?: 10
+Number of TieHi/Lo term nets not connected to instance's PG terms ?: 0
+Number of Input/InOut Floating Pins            : 0
+Number of Output Floating Pins                 : 0
+Number of Output Term Marked TieHi/Lo         *: 0
+
+**WARN: (IMPREPO-216):	There are 10 Instances with input pins tied together.
+Number of nets with tri-state drivers          : 0
+Number of nets with parallel drivers           : 0
+Number of nets with multiple drivers           : 0
+Number of nets with no driver (No FanIn)       : 0
+Number of Output Floating nets (No FanOut)     : 23
+Number of High Fanout nets (>50)               : 0
+**WARN: (IMPREPO-213):	There are 85 I/O Pins connected to Non-IO Insts.
+Checking for any assigns in the netlist...
+Assigns in module BATCHARGERctr
+  imonen cv
+Checking routing tracks.....
+Checking other grids.....
+Checking routing blockage.....
+Checking components.....
+Checking constraints (guide/region/fence).....
+Checking groups.....
+Checking Ptn Core Box.....
+
+Checking Preroutes.....
+No. of regular pre-routes not on tracks : 0 
+ Design check done.
+Report saved in file checkDesign/BATCHARGERctr.main.htm.ascii
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPREPO-202          1  There are %d Ports connected to core ins...
+WARNING   IMPREPO-213          1  There are %d I/O Pins connected to Non-I...
+WARNING   IMPREPO-216          1  There are %d Instances with input pins t...
+*** Message Summary: 3 warning(s), 0 error(s)
+
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site core -s 65.39 60.8 3.6 3.6 3.6 3.6
+**WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner_ab' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_o' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_n' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_k' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_bs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_as' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corega_3200' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'core_2800' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'core_3200' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+**ERROR: (IMPSYT-16175):	<To Global Net> field must be specified.
+**ERROR: (IMPSYT-16175):	<To Global Net> field must be specified.
+<CMD> clearGlobalNets
+<CMD> globalNetConnect dvdd -type pgpin -pin VCC -instanceBasename *
+<CMD> globalNetConnect dgnd -type pgpin -pin GND -instanceBasename *
+<CMD> setDrawView fplan
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal8 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {dgnd dvdd} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 0.4 bottom 0.4 left 0.4 right 0.4} -spacing {top 0.4 bottom 0.4 left 0.4 right 0.4} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1208.0M)
+**WARN: (IMPPP-193):	The currently specified top spacing 0.400000  might create min enclosed area violation. The required min enclosed area for layer metal1 is 0.307000. If violation happens, increase the spacing to around 0.604076. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified bottom spacing 0.400000  might create min enclosed area violation. The required min enclosed area for layer metal1 is 0.307000. If violation happens, increase the spacing to around 0.604076. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified left spacing 0.400000  might create min enclosed area violation. The required min enclosed area for layer metal2 is 0.307000. If violation happens, increase the spacing to around 0.604076. The recommended spacing is the square root of min enclosure area.
+**WARN: (IMPPP-193):	The currently specified right spacing 0.400000  might create min enclosed area violation. The required min enclosed area for layer metal2 is 0.307000. If violation happens, increase the spacing to around 0.604076. The recommended spacing is the square root of min enclosure area.
+Ring generation is complete.
+vias are now being generated.
+addRing created 8 wires.
+ViaGen created 8 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| metal1 |        4       |       NA       |
+|   via  |        8       |        0       |
+| metal2 |        4       |       NA       |
++--------+----------------+----------------+
+<CMD> zoomIn
+<CMD> zoomBox 22.92700 2.49800 49.47400 28.75200
+<CMD> zoomBox 22.92700 -8.00200 49.47400 18.25200
+<CMD> zoomBox 22.92700 -18.50200 49.47400 7.75200
+<CMD> zoomBox 22.92700 -5.37700 49.47400 20.87700
+<CMD> fit
+<CMD> zoomSelected -margin 50
+<CMD> gui_select -rect {-0.68700 55.04700 9.58000 45.22000}
+<CMD> zoomSelected -margin 50
+<CMD> zoomSelected -margin 50
+<CMD> gui_select -rect {-1.27300 52.26000 8.55300 43.16700}
+<CMD> selectWire 2.0000 2.0000 2.4000 66.0000 2 dgnd
+<CMD> deselectAll
+<CMD> gui_select -rect {-0.39300 51.08700 4.44700 43.46000}
+<CMD> zoomSelected -margin 50
+<CMD> zoomIn
+<CMD> fit
+<CMD> fit
+<CMD> gui_select -rect {-5.84500 44.85800 17.68100 26.27900}
+<CMD> gui_select -rect {-4.03600 46.06500 8.15000 24.22800}
+<CMD> zoomSelected -margin 50
+<CMD> gui_select -rect {-4.03600 49.92500 11.04500 35.32700}
+<CMD> zoomSelected -margin 50
+<CMD> zoomSelected -margin 50
+<CMD> zoomSelected -margin 50
+<CMD> zoomSelected -margin 50
+<CMD> zoomSelected -margin 50
+<CMD> zoomIn
+<CMD> zoomBox 10.48200 6.57600 61.91700 31.50900
+<CMD> zoomBox 10.48200 -18.35400 61.91700 6.57900
+<CMD> fit
+<CMD> zoomBox -40.95300 -55.76000 113.35200 19.04000
+<CMD> zoomBox -40.95300 -3.40000 113.35200 71.40000
+<CMD> zoomBox -110.68500 -68.29200 237.08400 100.29000
+<CMD> zoomBox -14.37100 21.33800 66.18000 60.38500
+<CMD> zoomBox -6.57400 34.01100 35.47400 54.39400
+<CMD> fit
+<CMD> zoomBox -40.95300 26.52000 113.35200 101.32000
+<CMD> zoomBox -81.05600 15.80400 214.54600 159.09800
+<CMD> zoomBox -20.02400 32.11100 60.52800 71.15900
+<CMD> zoomBox -4.40200 41.96100 17.55000 52.60200
+<CMD> zoomBox -4.40200 37.70500 17.55000 48.34600
+<CMD> fit
+<CMD> zoomBox -40.95300 -25.84000 113.35200 48.96000
+<CMD> zoomBox -40.95300 -10.88000 113.35200 63.92000
+<CMD> zoomBox -71.95300 -22.97400 141.61800 80.55500
+<CMD> zoomBox -40.95300 -10.88000 113.35200 63.92000
+<CMD> setSrouteMode -viaConnectToShape { noshape }
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1(1) metal8(8) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal8(8) } -nets { dgnd dvdd } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1(1) metal8(8) }
+*** Begin SPECIAL ROUTE on Mon Jan  6 16:10:34 2025 ***
+SPECIAL ROUTE ran on directory: /afs/.ist.utl.pt/users/0/4/ist1100004/DIGITAL/P_and_R/CHARGER
+SPECIAL ROUTE ran on machine: fatima.novalocal (Linux 3.10.0-1160.99.1.el7.x86_64 Xeon 2.40Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "dgnd dvdd"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 8
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 8
+srouteTopTargetLayerLimit set to 8
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 2316.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+**WARN: (IMPSR-4302):	Cap-table/qrcTechFile is found in the design, so the same information from the technology file will be ignored.
+Read in 16 layers, 8 routing layers, 1 overlap layer
+Read in 415 macros, 44 used
+Read in 43 components
+  43 core components: 43 unplaced, 0 placed, 0 fixed
+Read in 85 logical pins
+Read in 84 nets
+Read in 2 special nets, 2 routed
+Read in 86 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the dvdd net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the dvdd net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net dvdd. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the dgnd net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the dgnd net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net dgnd. Check net list, or change port class in the technology file, or change option to include pin in given range.
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 40
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 20
+End power routing: cpu: 0:00:01, real: 0:00:00, peak: 2351.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+sroute created 60 wires.
+ViaGen created 40 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| metal1 |       60       |       NA       |
+|   via  |       40       |        0       |
++--------+----------------+----------------+
+<CMD> fit
+ *** Starting Verify Geometry (MEM: 1217.3) ***
+
+**WARN: (IMPVFG-257):	setVerifyGeometryMode/verifyGeometry command is obsolete and should not be used any more. It still works in this release but will be removed in future release. You should change to use set_verify_drc_mode/verify_drc which is the replacement tool for verifyGeometry.
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 3600
+VG: elapsed time: 0.00
+Begin Summary ...
+  Cells       : 0
+  SameNet     : 0
+  Wiring      : 0
+  Antenna     : 0
+  Short       : 0
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 0 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********
+ *** verify geometry (CPU: 0:00:00.2  MEM: 77.3M)
+
+<CMD> set ptngSprNoRefreshPins 1
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin cc -status unplaced -silent
+<CMD> set ptngSprNoRefreshPins 0
+<CMD_INTERNAL> ptnSprRefreshPinsAndBlockages
+<CMD> setDrawView place
+<CMD> zoomBox -145.57100 -39.30300 150.02900 103.99000
+<CMD> zoomBox 46.83300 26.72500 82.57600 44.05200
+<CMD> zoomBox 31.74700 18.11900 89.95100 46.33400
+<CMD> zoomBox -17.26700 -9.84000 113.91500 53.75100
+<CMD> setLayerPreference overlapMacro -isVisible 1
+<CMD> setLayerPreference overlapGuide -isVisible 1
+<CMD> setLayerPreference overlapBlk -isVisible 1
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType center -spacing 0.8 -pin cc
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1294.7M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> zoomBox -130.81400 -68.86500 164.83700 74.45300
+<CMD> zoomBox -3.68400 -2.77900 107.82200 51.27400
+<CMD> zoomBox 39.09000 18.94800 88.56900 42.93300
+<CMD> zoomBox 55.39900 27.23200 81.22800 39.75300
+<CMD> zoomBox 66.49100 32.86700 76.23400 37.59000
+<CMD> zoomBox 63.97700 32.45700 77.46300 38.99400
+<CMD> zoomBox 58.39200 32.07900 80.35200 42.72400
+<CMD> zoomBox 40.50000 25.08100 89.99800 49.07500
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType center -spacing 0.8 -pin cv
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1213.7M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> zoomBox 28.32500 21.55700 96.83600 54.76800
+<CMD> zoomBox 55.64900 29.46300 81.49000 41.99000
+<CMD> zoomBox 62.03300 31.30900 77.90400 39.00300
+<CMD> zoomBox 66.68100 32.95700 74.96800 36.97400
+<CMD> gui_select -rect {72.14300 34.14300 72.31100 35.28900}
+<CMD> zoomBox 70.43600 33.75100 73.56300 35.26700
+<CMD> zoomBox 66.67300 32.95400 74.97000 36.97600
+<CMD> zoomBox 61.14100 31.78200 77.03700 39.48800
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType center -spacing 0.8 -pin tc
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1213.8M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> zoomBox 59.20300 31.30200 77.90600 40.36800
+<CMD> zoomBox 69.12400 33.76100 73.45600 35.86100
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType center -spacing 0.8 -pin cv
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1213.8M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> zoomBox 70.02300 34.45300 71.94600 35.38500
+<CMD> zoomBox 68.10300 32.97400 75.16800 36.39900
+<CMD> zoomBox 64.79800 30.42500 80.72400 38.14500
+<CMD> zoomBox 48.93500 18.18800 107.38700 46.52300
+<CMD> zoomBox -39.99700 -50.42200 256.90800 93.50400
+<CMD> zoomBox 45.08400 15.21700 113.85300 48.55300
+<CMD> zoomBox 64.78900 30.42000 80.71900 38.14200
+<CMD> zoomBox 60.13300 27.87600 86.07200 40.45000
+<CMD> zoomBox 68.91000 32.67000 75.98000 36.09700
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -side Right -layer 3 -spreadType center -spacing 0.4 -pin cv
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.1 real = 0:00:00.0, mem = 1213.9M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType center -spacing 0.4 -pin cv
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1214.0M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -side Right -layer 3 -spreadType center -spacing 0.8 -pin cc
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1214.0M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType center -spacing 0.8 -pin cc
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1214.1M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> set ptngSprNoRefreshPins 1
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin cc -status unplaced -silent
+<CMD> set ptngSprNoRefreshPins 0
+<CMD_INTERNAL> ptnSprRefreshPinsAndBlockages
+<CMD> set ptngSprNoRefreshPins 1
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin cv -status unplaced -silent
+<CMD> set ptngSprNoRefreshPins 0
+<CMD_INTERNAL> ptnSprRefreshPinsAndBlockages
+<CMD> set ptngSprNoRefreshPins 1
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin tc -status unplaced -silent
+<CMD> set ptngSprNoRefreshPins 0
+<CMD_INTERNAL> ptnSprRefreshPinsAndBlockages
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType center -spacing 0.8 -pin tc
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1214.2M).
+<CMD> setPinAssignMode -pinEditInBatch false
+**ERROR: (IMPSYT-16249):	Inside Pin can only be specified with 'From Start Point' and single pin.
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType center -spacing 0.8 -pin cv
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:01.0, mem = 1214.2M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType center -spacing 0.8 -pin cc
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1214.3M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> zoomBox 68.91000 31.29800 75.98000 34.72500
+<CMD> fit
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 4 -spreadType center -spacing 0.8 -pin tmonen
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1214.3M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> set ptngSprNoRefreshPins 1
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin imonen -status unplaced -silent
+<CMD> set ptngSprNoRefreshPins 0
+<CMD_INTERNAL> ptnSprRefreshPinsAndBlockages
+<CMD> fit
+<CMD> zoomBox -137.60800 -7.18200 210.15700 161.39800
+<CMD> zoomBox 29.40300 -0.65000 42.88400 5.88500
+<CMD> zoomBox 20.95600 -0.98300 51.34400 13.74800
+<CMD> zoomBox -11.22400 -2.24300 83.57300 43.71000
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 4 -spreadType center -spacing 0.8 -pin imonen
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1214.4M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> zoomBox -89.56500 -6.03800 161.79200 115.80800
+<CMD> zoomBox -297.28500 -16.10100 369.18400 306.97200
+<CMD> selectWire 3.6000 16.1200 68.8000 16.6800 1 dvdd
+<CMD> zoomBox -120.16900 1.87100 175.54600 145.22000
+<CMD> fit
+<CMD> zoomBox 11.17700 -0.78000 60.64700 23.20100
+<CMD> zoomBox 30.07800 0.16900 41.53800 5.72400
+<CMD> fit
+<CMD> zoomBox 32.91500 -2.71800 41.19500 1.29600
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -side Bottom -layer 4 -spreadType center -spacing 0.8 -pin imonen
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1214.5M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> gui_select -rect {36.67700 0.11800 36.87700 0.05900}
+<CMD> deselectAll
+<CMD> gui_select -rect {35.90600 0.07200 36.66400 -0.04400}
+<CMD> set ptngSprNoRefreshPins 1
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin imonen -status unplaced -silent
+<CMD> set ptngSprNoRefreshPins 0
+<CMD_INTERNAL> ptnSprRefreshPinsAndBlockages
+<CMD> set ptngSprNoRefreshPins 1
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin tmonen -status unplaced -silent
+<CMD> set ptngSprNoRefreshPins 0
+<CMD_INTERNAL> ptnSprRefreshPinsAndBlockages
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -side Bottom -layer 4 -spreadType center -spacing 0.8 -pin {{ibat[0]} {ibat[1]} {ibat[2]} {ibat[3]} {ibat[4]} {ibat[5]} {ibat[6]} {ibat[7]}}
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [8] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1220.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> zoomBox 34.67900 -1.55300 37.80300 -0.03900
+<CMD> fit
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 4 -spreadType center -spacing 0.8 -pin {{tbat[0]} {tbat[1]} {tbat[2]} {tbat[3]} {tbat[4]} {tbat[5]} {tbat[6]} {tbat[7]}}
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [8] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1220.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> zoomBox -19.56000 -2.42900 91.92500 51.61400
+<CMD> zoomBox 18.28100 -0.71300 54.02300 16.61300
+<CMD> zoomBox 27.06800 -0.00600 45.72700 9.03900
+<CMD> zoomBox 33.65800 0.21700 37.98200 2.31300
+<CMD> set ptngSprNoRefreshPins 1
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tbat[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tbat[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tbat[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tbat[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tbat[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tbat[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tbat[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tbat[7]} -status unplaced -silent
+<CMD> set ptngSprNoRefreshPins 0
+<CMD_INTERNAL> ptnSprRefreshPinsAndBlockages
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 4 -spreadType center -spacing 0.8 -pin {{tbat[0]} {tbat[1]} {tbat[2]} {tbat[3]} {tbat[4]} {tbat[5]} {tbat[6]} {tbat[7]}}
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [8] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1220.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 4 -spreadType center -spacing -0.8 -pin {{tbat[0]} {tbat[1]} {tbat[2]} {tbat[3]} {tbat[4]} {tbat[5]} {tbat[6]} {tbat[7]}}
+**ERROR: (IMPPTN-1668):	Specifying negative spacing value to spread the pins along the partition fence in anti-clockwise direction is obsolete. Use [-spreadDirection counterclockwise] option to specify the spreading direction.
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> set ptngSprNoRefreshPins 1
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tbat[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tbat[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tbat[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tbat[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tbat[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tbat[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tbat[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tbat[7]} -status unplaced -silent
+<CMD> set ptngSprNoRefreshPins 0
+<CMD_INTERNAL> ptnSprRefreshPinsAndBlockages
+<CMD> zoomBox 32.12700 -0.02500 40.41200 3.99100
+<CMD> zoomBox 26.84000 -0.86000 48.81000 9.79000
+<CMD> zoomBox 23.58000 -1.37500 53.99000 13.36600
+<CMD> zoomBox 18.71300 -1.75900 60.80200 18.64400
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -spreadDirection counterclockwise -edge 3 -layer 1 -spreadType side -pin {{vbat[0]} {vbat[1]} {vbat[2]} {vbat[3]} {vbat[4]} {vbat[5]} {vbat[6]} {vbat[7]}}
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+**WARN: (IMPPTN-3304):	Pin vbat[0] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin vbat[7] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin vbat[1] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin vbat[2] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin vbat[3] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin vbat[4] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin vbat[5] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin vbat[6] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+Successfully spread [8] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1220.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -spreadDirection counterclockwise -edge 3 -layer 3 -spreadType side -pin {{vbat[0]} {vbat[1]} {vbat[2]} {vbat[3]} {vbat[4]} {vbat[5]} {vbat[6]} {vbat[7]}}
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [8] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1220.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> zoomBox -2.74400 -3.44900 77.88900 35.63800
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 32 -pin {{vbat[0]} {vbat[1]} {vbat[2]} {vbat[3]} {vbat[4]} {vbat[5]} {vbat[6]} {vbat[7]}}
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [8] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1220.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 40 -pin {{vbat[0]} {vbat[1]} {vbat[2]} {vbat[3]} {vbat[4]} {vbat[5]} {vbat[6]} {vbat[7]}}
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [8] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1220.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 20 -pin {{vbat[0]} {vbat[1]} {vbat[2]} {vbat[3]} {vbat[4]} {vbat[5]} {vbat[6]} {vbat[7]}}
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [8] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1220.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> zoomBox -132.83500 -12.86100 215.29800 155.89800
+<CMD> zoomBox 27.38200 -1.27400 46.06200 7.78100
+<CMD> zoomBox 32.22500 -0.12500 35.90400 1.65800
+<CMD> fit
+<CMD> zoomBox 8.16700 -1.36800 38.55000 13.36000
+<CMD> zoomBox 19.33400 0.22500 20.96700 1.01700
+<CMD> fit
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 50 -pin {{tbat[0]} {tbat[1]} {tbat[2]} {tbat[3]} {tbat[4]} {tbat[5]} {tbat[6]} {tbat[7]}}
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [8] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1220.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 50 -pin {{tbat[0]} {tbat[1]} {tbat[2]} {tbat[3]} {tbat[4]} {tbat[5]} {tbat[6]} {tbat[7]}}
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [8] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1220.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 3 -layer 4 -spreadType start -spacing -0.8 -offsetStart 43 -pin {{tbat[0]} {tbat[1]} {tbat[2]} {tbat[3]} {tbat[4]} {tbat[5]} {tbat[6]} {tbat[7]}}
+**ERROR: (IMPPTN-1668):	Specifying negative spacing value to spread the pins along the partition fence in anti-clockwise direction is obsolete. Use [-spreadDirection counterclockwise] option to specify the spreading direction.
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 43 -pin {{tbat[0]} {tbat[1]} {tbat[2]} {tbat[3]} {tbat[4]} {tbat[5]} {tbat[6]} {tbat[7]}}
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [8] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1220.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 45 -pin {{tbat[0]} {tbat[1]} {tbat[2]} {tbat[3]} {tbat[4]} {tbat[5]} {tbat[6]} {tbat[7]}}
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [8] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1220.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 47 -pin {{tbat[0]} {tbat[1]} {tbat[2]} {tbat[3]} {tbat[4]} {tbat[5]} {tbat[6]} {tbat[7]}}
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [8] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1220.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 47 -pin {{tbat[0]} {tbat[1]} {tbat[2]} {tbat[3]} {tbat[4]} {tbat[5]} {tbat[6]} {tbat[7]}}
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [8] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1220.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> zoomBox -74.82600 -4.55800 138.74500 98.97100
+<CMD> zoomBox -121.70900 -6.16200 173.89100 137.13100
+<CMD> zoomBox -40.95300 -3.40000 113.35200 71.40000
+<CMD> zoomBox -333.52800 -13.40800 332.68300 309.54000
+<CMD> zoomBox -1350.12400 -48.17700 1094.78300 1137.00100
+<CMD> fit
+<CMD> zoomBox 8.30800 -1.45400 76.77600 31.73600
+<CMD> zoomBox 23.47000 -0.85600 65.51800 19.52700
+<CMD> zoomBox 32.55300 -0.64100 58.37600 11.87700
+<CMD> zoomBox 39.46200 -0.47800 52.94300 6.05700
+<CMD> zoomBox 45.25900 -0.34200 48.38200 1.17200
+<CMD> fit
+<CMD> zoomBox 0.99100 -1.99200 69.45900 31.19800
+<CMD> zoomBox 23.72200 -1.22900 45.67300 9.41200
+<CMD> zoomBox 28.70100 -0.79500 40.16000 4.76000
+<CMD> zoomBox 31.72500 -0.53200 36.81000 1.93300
+<CMD> zoomBox 33.06700 -0.41500 35.32400 0.67900
+<CMD> fit
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 50 -pin vmonen
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1220.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.4 -offsetStart 60 -pin vmonen
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1220.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 61 -pin imonen
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1220.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 62 -pin tmonen
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1220.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 62 -pin tmonen
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1220.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.4 -offsetStart 62 -pin tmonen
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1220.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> zoomBox -105.69300 -4.46200 145.56900 117.33800
+<CMD> zoomBox 23.21700 -2.35100 81.41600 25.86100
+<CMD> zoomBox 47.02300 -0.76500 68.97500 9.87600
+<CMD> zoomBox 8.52600 -3.33300 89.09500 35.72300
+<CMD> zoomBox -167.02200 -15.03800 180.83900 153.58900
+<CMD> zoomBox -11.79900 -4.68800 99.71600 49.36900
+<CMD> saveFPlan BATCHARGERctr.fp
+<CMD> saveIoFile -locations BATCHARGERctr.save.io
+Dumping FTerm of cell BATCHARGERctr to file
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 10 -pin {clk en rstz}
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [3] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1220.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> zoomBox 9.41300 6.52200 67.62600 34.74100
+<CMD> zoomBox -11.80300 -4.69000 99.71800 49.37000
+<CMD> zoomBox -28.85000 -13.69900 125.50500 61.12500
+<CMD> fit
+<CMD> zoomBox -75.21700 -4.99200 176.04300 116.80700
+<CMD> zoomBox -62.58100 -4.19700 151.00000 99.33700
+<CMD> zoomBox -180.89100 -11.64300 385.41200 262.87400
+<CMD> fit
+<CMD> zoomBox -3.74000 0.11000 38.30900 20.49300
+<CMD> zoomBox 8.21900 0.35400 15.25800 3.76600
+<CMD> zoomBox 2.64900 -1.72400 18.51400 5.96700
+<CMD> zoomBox 2.64800 -2.49300 18.51400 5.19800
+<CMD> fit
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 1 -layer 4 -spreadType center -spacing 0.8 -pin so
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1220.7M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -use POWER -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 1 -layer 4 -spreadType start -spacing 1.2 -offsetStart 10 -pin {dgnd dvdd}
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [2] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1220.7M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -use POWER -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 1 -layer 4 -spreadType start -spacing 1.2 -offsetStart 10 -pin {dgnd dvdd}
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [2] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1223.7M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -use POWER -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 1 -layer 4 -spreadType start -spacing 2 -offsetStart 10 -pin {dgnd dvdd}
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [2] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1223.7M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -spreadDirection clockwise -side Left -layer 3 -spreadType side -pin {{vcutoff[0]} {vcutoff[1]} {vcutoff[2]} {vcutoff[3]} {vcutoff[4]} {vcutoff[5]} {vcutoff[6]} {vcutoff[7]} {vpreset[0]} {vpreset[1]} {vpreset[2]} {vpreset[3]} {vpreset[4]} {vpreset[5]} {vpreset[6]} {vpreset[7]} {tempmin[0]} {tempmin[1]} {tempmin[2]} {tempmin[3]} {tempmin[4]} {tempmin[5]} {tempmin[6]} {tempmin[7]} {tempmax[0]} {tempmax[1]} {tempmax[2]} {tempmax[3]} {tempmax[4]} {tempmax[5]} {tempmax[6]} {tempmax[7]} {tmax[0]} {tmax[1]} {tmax[2]} {tmax[3]} {tmax[4]} {tmax[5]} {tmax[6]} {tmax[7]} vtok {iend[0]} {iend[1]} {iend[2]} {iend[3]} {iend[4]} {iend[5]} {iend[6]} {iend[7]}}
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [49] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1221.7M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> zoomBox -67.86600 -12.72500 183.39600 109.07500
+<CMD> zoomBox -30.71100 31.53500 80.77700 85.57900
+<CMD> zoomBox -10.57800 55.52000 25.16600 72.84700
+<CMD> zoomBox -4.66000 62.57000 8.82100 69.10500
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -spreadDirection counterclockwise -side Left -layer 3 -spreadType side -pin {{vcutoff[0]} {vcutoff[1]} {vcutoff[2]} {vcutoff[3]} {vcutoff[4]} {vcutoff[5]} {vcutoff[6]} {vcutoff[7]} {vpreset[0]} {vpreset[1]} {vpreset[2]} {vpreset[3]} {vpreset[4]} {vpreset[5]} {vpreset[6]} {vpreset[7]} {tempmin[0]} {tempmin[1]} {tempmin[2]} {tempmin[3]} {tempmin[4]} {tempmin[5]} {tempmin[6]} {tempmin[7]} {tempmax[0]} {tempmax[1]} {tempmax[2]} {tempmax[3]} {tempmax[4]} {tempmax[5]} {tempmax[6]} {tempmax[7]} {tmax[0]} {tmax[1]} {tmax[2]} {tmax[3]} {tmax[4]} {tmax[5]} {tmax[6]} {tmax[7]} vtok {iend[0]} {iend[1]} {iend[2]} {iend[3]} {iend[4]} {iend[5]} {iend[6]} {iend[7]}}
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [49] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1221.7M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> zoomBox -0.61400 64.32200 4.47300 66.78800
+<CMD> zoomBox 0.55700 64.82900 3.21400 66.11700
+<CMD> zoomBox -3.69800 62.98600 7.77900 68.55000
+<CMD> zoomBox -22.07500 55.03400 27.49000 79.06100
+<CMD> set ptngSprNoRefreshPins 1
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {vcutoff[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {vcutoff[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {vcutoff[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {vcutoff[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {vcutoff[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {vcutoff[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {vcutoff[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {vcutoff[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {vpreset[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {vpreset[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {vpreset[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {vpreset[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {vpreset[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {vpreset[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {vpreset[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {vpreset[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tempmin[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tempmin[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tempmin[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tempmin[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tempmin[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tempmin[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tempmin[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tempmin[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tempmax[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tempmax[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tempmax[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tempmax[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tempmax[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tempmax[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tempmax[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tempmax[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tmax[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tmax[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tmax[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tmax[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tmax[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tmax[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tmax[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {tmax[7]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin vtok -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {iend[0]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {iend[1]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {iend[2]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {iend[3]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {iend[4]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {iend[5]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {iend[6]} -status unplaced -silent
+<CMD> setPtnPinStatus -cell BATCHARGERctr -pin {iend[7]} -status unplaced -silent
+<CMD> set ptngSprNoRefreshPins 0
+<CMD_INTERNAL> ptnSprRefreshPinsAndBlockages
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -spreadDirection counterclockwise -side Left -layer 1 -spreadType side -pin {{vcutoff[0]} {vcutoff[1]} {vcutoff[2]} {vcutoff[3]} {vcutoff[4]} {vcutoff[5]} {vcutoff[6]} {vcutoff[7]} {vpreset[0]} {vpreset[1]} {vpreset[2]} {vpreset[3]} {vpreset[4]} {vpreset[5]} {vpreset[6]} {vpreset[7]} {tempmin[0]} {tempmin[1]} {tempmin[2]} {tempmin[3]} {tempmin[4]} {tempmin[5]} {tempmin[6]} {tempmin[7]} {tempmax[0]} {tempmax[1]} {tempmax[2]} {tempmax[3]} {tempmax[4]} {tempmax[5]} {tempmax[6]} {tempmax[7]} {tmax[0]} {tmax[1]} {tmax[2]} {tmax[3]} {tmax[4]} {tmax[5]} {tmax[6]} {tmax[7]} vtok {iend[0]} {iend[1]} {iend[2]} {iend[3]} {iend[4]} {iend[5]} {iend[6]} {iend[7]}}
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+**WARN: (IMPPTN-3304):	Pin vcutoff[0] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin iend[7] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin vcutoff[1] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin vcutoff[2] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin vcutoff[3] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin vcutoff[4] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin vcutoff[5] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin vcutoff[6] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin vcutoff[7] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin vpreset[0] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin vpreset[1] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin vpreset[2] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin vpreset[3] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin vpreset[4] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin vpreset[5] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin vpreset[6] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin vpreset[7] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin tempmin[0] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin tempmin[1] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (IMPPTN-3304):	Pin tempmin[2] has depth 0.52000 which is less than the minimum depth 0.64000 required to meet the min-area rule for layer 1. Change pin width and/or pin depth to meet minimum area rule.
+**WARN: (EMS-27):	Message (IMPPTN-3304) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Successfully spread [49] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1221.7M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 0 -layer 3 -spreadType center -spacing 0.8 -pin {{vcutoff[0]} {vcutoff[1]} {vcutoff[2]} {vcutoff[3]} {vcutoff[4]} {vcutoff[5]} {vcutoff[6]} {vcutoff[7]} {vpreset[0]} {vpreset[1]} {vpreset[2]} {vpreset[3]} {vpreset[4]} {vpreset[5]} {vpreset[6]} {vpreset[7]} {tempmin[0]} {tempmin[1]} {tempmin[2]} {tempmin[3]} {tempmin[4]} {tempmin[5]} {tempmin[6]} {tempmin[7]} {tempmax[0]} {tempmax[1]} {tempmax[2]} {tempmax[3]} {tempmax[4]} {tempmax[5]} {tempmax[6]} {tempmax[7]} {tmax[0]} {tmax[1]} {tmax[2]} {tmax[3]} {tmax[4]} {tmax[5]} {tmax[6]} {tmax[7]} vtok {iend[0]} {iend[1]} {iend[2]} {iend[3]} {iend[4]} {iend[5]} {iend[6]} {iend[7]}}
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [49] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1221.7M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> fit
+<CMD> zoomBox -87.69300 -44.39200 260.07400 124.18900
+<CMD> zoomBox -20.21600 14.78700 48.25200 47.97700
+<CMD> fit
+<CMD> zoomBox -13.13200 39.60600 28.91600 59.98900
+<CMD> zoomBox -2.73100 51.03800 5.54900 55.05200
+<CMD> fit
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -use CLOCK -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 10 -pin clk
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1221.7M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -use CLOCK -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.4 -offsetStart 10 -pin clk
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1221.7M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -use CLOCK -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.4 -offsetStart 10 -pin clk
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:01.0, mem = 1221.7M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -use CLOCK -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.4 -offsetStart 10 -pin clk
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1221.7M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> getPinAssignMode -pinEditInBatch -quiet
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -use CLOCK -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.4 -offsetStart 10 -pin clk
+Fixing pin overlap option is turned OFF. Automatic tool checks for overlap only for snap to TRACK.
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1221.7M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> zoomBox -127.22800 -7.38500 281.91200 190.94700
+<CMD> zoomBox -8.41900 -1.89900 49.78100 26.31400
+<CMD> zoomBox 9.81900 -1.05800 14.14200 1.03800
+<CMD> fit
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal8 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {dgnd dvdd} -layer metal7 -direction vertical -width 1 -spacing 0.4 -set_to_set_distance 100 -start_from left -start_offset 5 -stop_offset 5 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal8 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal8 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+
+Initialize fgc environment(mem: 1233.1M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1233.1M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1233.1M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1233.1M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1233.1M)
+**WARN: (IMPPP-193):	The currently specified  spacing 0.400000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer metal7 is 0.870000. If violation happens, increase the spacing to around 0.982738. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 2 wires.
+ViaGen created 144 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   via  |       24       |        0       |
+|  via2  |       24       |        0       |
+|  via3  |       24       |        0       |
+|  via4  |       24       |        0       |
+|  via5  |       24       |        0       |
+|  via6  |       24       |        0       |
+| metal7 |        2       |       NA       |
++--------+----------------+----------------+
+<CMD> selectWire 10.0000 1.2000 11.0000 66.8000 7 dvdd
+<CMD> deselectAll
+<CMD> selectWire 10.0000 1.2000 11.0000 66.8000 7 dvdd
+<CMD> deselectAll
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 8.6000 2.0000 9.6000 66.0000 7 dgnd
+<CMD> zoomBox -89.23200 -63.60900 206.37100 79.68600
+<CMD> zoomBox -8.12000 37.55200 50.07900 65.76400
+<CMD> zoomBox 4.26500 52.99800 26.21600 63.63900
+<CMD> uiSetTool cutWire
+<CMD> uiSetTool cutWire
+<CMD> fit
+<CMD> uiSetTool addVia
+<CMD> uiSetTool select
+<CMD> uiSetTool select
+<CMD> setAddStripeMode -reset
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal8 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {dgnd dvdd} -layer metal1 -direction vertical -width 1 -spacing 0.4 -set_to_set_distance 100 -start_from left -start_offset 10 -stop_offset 10 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal8 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal8 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+
+Initialize fgc environment(mem: 1233.1M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1233.1M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1233.1M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1233.1M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1233.1M)
+**WARN: (IMPPP-193):	The currently specified  spacing 0.400000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer metal1 is 0.307000. If violation happens, increase the spacing to around 0.604076. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 22 wires.
+ViaGen created 4 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| metal1 |       20       |       NA       |
+|   via  |        4       |        0       |
+| metal2 |        2       |       NA       |
++--------+----------------+----------------+
+<CMD> zoomBox -83.92800 -48.14200 211.67200 95.15100
+<CMD> zoomBox -33.91500 3.92800 97.24600 67.50900
+<CMD> zoomBox -14.85100 23.78000 53.61900 56.97100
+<CMD> uiSetTool cutWire
+<CMD> editCutWire -only_visible_wires -line { 10.685 53.17 11.059 53.17 }
+Cut-line is auto-snapped from (10.685000 53.170000 11.059000 53.170000) to (10.680000 53.170000 11.060000 53.170000).
+<CMD> uiSetTool select
+<CMD> deselectAll
+<CMD> selectWire 8.6000 2.0000 9.6000 66.0000 7 dgnd
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 10.0000 1.2000 11.0000 66.8000 7 dvdd
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 13.6000 49.4300 14.6000 53.7700 1 dgnd
+<CMD> zoomBox -14.85100 7.18500 53.61900 40.37600
+<CMD> zoomBox -41.17600 -19.38400 89.99200 44.20000
+<CMD> deselectAll
+<CMD> selectWire 15.0000 1.2000 16.0000 4.1500 2 dvdd
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 15.0000 3.1500 16.0000 5.7700 1 dvdd
+<CMD> deleteSelectedFromFPlan
+<CMD> gui_select -rect {17.28000 3.69100 12.05000 30.56000}
+<CMD> deleteSelectedFromFPlan
+<CMD> zoomBox -8.02500 11.72300 41.44500 35.70400
+<CMD> zoomBox -5.01400 14.54800 37.03600 34.93200
+<CMD> fit
+<CMD> gui_select -rect {13.33700 68.74600 17.31900 24.46900}
+<CMD> deleteSelectedFromFPlan
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal8 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {dgnd dvdd} -layer metal7 -direction vertical -width 1 -spacing 0.4 -set_to_set_distance 100 -start_from left -start_offset 20 -stop_offset 20 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal8 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal8 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+
+Initialize fgc environment(mem: 1233.1M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1233.1M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1233.1M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1233.1M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1233.1M)
+**WARN: (IMPPP-193):	The currently specified  spacing 0.400000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer metal7 is 0.870000. If violation happens, increase the spacing to around 0.982738. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 2 wires.
+ViaGen created 144 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   via  |       24       |        0       |
+|  via2  |       24       |        0       |
+|  via3  |       24       |        0       |
+|  via4  |       24       |        0       |
+|  via5  |       24       |        0       |
+|  via6  |       24       |        0       |
+| metal7 |        2       |       NA       |
++--------+----------------+----------------+
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal8 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {dgnd dvdd} -layer metal7 -direction vertical -width 1 -spacing 0.4 -set_to_set_distance 100 -start_from left -start_offset 40 -stop_offset 40 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal8 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal8 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+
+Initialize fgc environment(mem: 1233.1M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1233.1M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1233.1M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1233.1M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1233.1M)
+**WARN: (IMPPP-193):	The currently specified  spacing 0.400000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer metal7 is 0.870000. If violation happens, increase the spacing to around 0.982738. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal8 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {dgnd dvdd} -layer metal7 -direction vertical -width 1 -spacing 0.4 -set_to_set_distance 100 -start_from left -start_offset 40 -stop_offset 40 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal8 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal8 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+
+Initialize fgc environment(mem: 1233.1M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1233.1M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1233.1M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1233.1M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1233.1M)
+**WARN: (IMPPP-193):	The currently specified  spacing 0.400000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer metal7 is 0.870000. If violation happens, increase the spacing to around 0.982738. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+<CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer metal8 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will stop at the boundary of the specified area.
+When breaking rings, the power planner will consider the existence of blocks.
+Stripes will not extend to closest target.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+Stripes will not be created over regions without power planning wires.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+Offset for stripe breaking is set to 0.
+<CMD> addStripe -nets {dgnd dvdd} -layer metal7 -direction vertical -width 1 -spacing 0.4 -set_to_set_distance 100 -start_from right -start_offset 20 -stop_offset 20 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal8 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal8 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+
+Initialize fgc environment(mem: 1233.1M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1233.1M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1233.1M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1233.1M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1233.1M)
+**WARN: (IMPPP-193):	The currently specified  spacing 0.400000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer metal7 is 0.870000. If violation happens, increase the spacing to around 0.982738. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+Stripe generation is complete.
+vias are now being generated.
+addStripe created 2 wires.
+ViaGen created 144 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   via  |       24       |        0       |
+|  via2  |       24       |        0       |
+|  via3  |       24       |        0       |
+|  via4  |       24       |        0       |
+|  via5  |       24       |        0       |
+|  via6  |       24       |        0       |
+| metal7 |        2       |       NA       |
++--------+----------------+----------------+
+<CMD> saveIoFile -locations BATCHARGERctr.save.io
+Dumping FTerm of cell BATCHARGERctr to file
+<CMD> saveFPlan BATCHARGERctr.fp
+WC_AN BC_AN
+FF_SDC SS_SDC
+../../SYNTHESIS/CHARGER/BATCHARGERctr_synth.sdc
+../../SYNTHESIS/CHARGER/BATCHARGERctr_synth.sdc
+FF_DELAY SS_DELAY
+SS_LIB FF_LIB
+SS_RC FF_RC
+<CMD> setDesignMode -process 130
+##  Process: 130           (User Set)               
+##     Node: (not set)                           
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Mon Jan  6 17:19:29 2025
+  Total CPU time:     0:12:29
+  Total real time:    1:23:48
+  Peak memory (main): 1125.55MB
+
+
+*** Memory Usage v#2 (Current mem = 1226.688M, initial mem = 272.281M) ***
+*** Message Summary: 1349 warning(s), 8 error(s)
+
+--- Ending "Innovus" (totcpu=0:12:30, real=1:23:47, mem=1226.7M) ---
