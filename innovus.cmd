@@ -218,8 +218,6 @@ setNanoRouteMode -quiet -routeWithSiDriven false
 routeDesign -globalDetail
 verify_drc
 verify_connectivity
-redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
-timeDesign -postRoute -pathReports -drvReports -slackReports -numPaths 50 -prefix BATCHARGERctr_postRoute -outDir timingReports
 setAnalysisMode -analysisType onChipVariation
 redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
 timeDesign -postRoute -pathReports -drvReports -slackReports -numPaths 50 -prefix BATCHARGERctr_postRoute -outDir timingReports
