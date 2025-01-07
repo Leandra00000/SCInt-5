@@ -83,51 +83,6 @@ setLayerPreference overlapGuide -isVisible 1
 setLayerPreference overlapBlk -isVisible 1
 getPinAssignMode -pinEditInBatch -quiet
 setPinAssignMode -pinEditInBatch true
-editPin -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType center -spacing 0.8 -pin cc
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType center -spacing 0.8 -pin cv
-setPinAssignMode -pinEditInBatch false
-gui_select -rect {72.14300 34.14300 72.31100 35.28900}
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType center -spacing 0.8 -pin tc
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType center -spacing 0.8 -pin cv
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -side Right -layer 3 -spreadType center -spacing 0.4 -pin cv
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType center -spacing 0.4 -pin cv
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -side Right -layer 3 -spreadType center -spacing 0.8 -pin cc
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType center -spacing 0.8 -pin cc
-setPinAssignMode -pinEditInBatch false
-set ptngSprNoRefreshPins 1
-setPtnPinStatus -cell BATCHARGERctr -pin cc -status unplaced -silent
-set ptngSprNoRefreshPins 0
-ptnSprRefreshPinsAndBlockages
-set ptngSprNoRefreshPins 1
-setPtnPinStatus -cell BATCHARGERctr -pin cv -status unplaced -silent
-set ptngSprNoRefreshPins 0
-ptnSprRefreshPinsAndBlockages
-set ptngSprNoRefreshPins 1
-setPtnPinStatus -cell BATCHARGERctr -pin tc -status unplaced -silent
-set ptngSprNoRefreshPins 0
-ptnSprRefreshPinsAndBlockages
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
 editPin -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType center -spacing 0.8 -pin tc
 setPinAssignMode -pinEditInBatch false
 getPinAssignMode -pinEditInBatch -quiet
@@ -172,84 +127,11 @@ editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -
 setPinAssignMode -pinEditInBatch false
 getPinAssignMode -pinEditInBatch -quiet
 setPinAssignMode -pinEditInBatch true
-editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 4 -spreadType center -spacing 0.8 -pin {{tbat[0]} {tbat[1]} {tbat[2]} {tbat[3]} {tbat[4]} {tbat[5]} {tbat[6]} {tbat[7]}}
-setPinAssignMode -pinEditInBatch false
-set ptngSprNoRefreshPins 1
-setPtnPinStatus -cell BATCHARGERctr -pin {tbat[0]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tbat[1]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tbat[2]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tbat[3]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tbat[4]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tbat[5]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tbat[6]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tbat[7]} -status unplaced -silent
-set ptngSprNoRefreshPins 0
-ptnSprRefreshPinsAndBlockages
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 4 -spreadType center -spacing 0.8 -pin {{tbat[0]} {tbat[1]} {tbat[2]} {tbat[3]} {tbat[4]} {tbat[5]} {tbat[6]} {tbat[7]}}
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-set ptngSprNoRefreshPins 1
-setPtnPinStatus -cell BATCHARGERctr -pin {tbat[0]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tbat[1]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tbat[2]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tbat[3]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tbat[4]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tbat[5]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tbat[6]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tbat[7]} -status unplaced -silent
-set ptngSprNoRefreshPins 0
-ptnSprRefreshPinsAndBlockages
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -spreadDirection counterclockwise -edge 3 -layer 1 -spreadType side -pin {{vbat[0]} {vbat[1]} {vbat[2]} {vbat[3]} {vbat[4]} {vbat[5]} {vbat[6]} {vbat[7]}}
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -spreadDirection counterclockwise -edge 3 -layer 3 -spreadType side -pin {{vbat[0]} {vbat[1]} {vbat[2]} {vbat[3]} {vbat[4]} {vbat[5]} {vbat[6]} {vbat[7]}}
-setPinAssignMode -pinEditInBatch false
-zoomBox -2.74400 -3.44900 77.88900 35.63800
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 32 -pin {{vbat[0]} {vbat[1]} {vbat[2]} {vbat[3]} {vbat[4]} {vbat[5]} {vbat[6]} {vbat[7]}}
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 40 -pin {{vbat[0]} {vbat[1]} {vbat[2]} {vbat[3]} {vbat[4]} {vbat[5]} {vbat[6]} {vbat[7]}}
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
 editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 20 -pin {{vbat[0]} {vbat[1]} {vbat[2]} {vbat[3]} {vbat[4]} {vbat[5]} {vbat[6]} {vbat[7]}}
 setPinAssignMode -pinEditInBatch false
 getPinAssignMode -pinEditInBatch -quiet
 setPinAssignMode -pinEditInBatch true
-editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 50 -pin {{tbat[0]} {tbat[1]} {tbat[2]} {tbat[3]} {tbat[4]} {tbat[5]} {tbat[6]} {tbat[7]}}
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 50 -pin {{tbat[0]} {tbat[1]} {tbat[2]} {tbat[3]} {tbat[4]} {tbat[5]} {tbat[6]} {tbat[7]}}
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 43 -pin {{tbat[0]} {tbat[1]} {tbat[2]} {tbat[3]} {tbat[4]} {tbat[5]} {tbat[6]} {tbat[7]}}
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 45 -pin {{tbat[0]} {tbat[1]} {tbat[2]} {tbat[3]} {tbat[4]} {tbat[5]} {tbat[6]} {tbat[7]}}
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 47 -pin {{tbat[0]} {tbat[1]} {tbat[2]} {tbat[3]} {tbat[4]} {tbat[5]} {tbat[6]} {tbat[7]}}
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
 editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 47 -pin {{tbat[0]} {tbat[1]} {tbat[2]} {tbat[3]} {tbat[4]} {tbat[5]} {tbat[6]} {tbat[7]}}
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 50 -pin vmonen
 setPinAssignMode -pinEditInBatch false
 getPinAssignMode -pinEditInBatch -quiet
 setPinAssignMode -pinEditInBatch true
@@ -258,14 +140,6 @@ setPinAssignMode -pinEditInBatch false
 getPinAssignMode -pinEditInBatch -quiet
 setPinAssignMode -pinEditInBatch true
 editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 61 -pin imonen
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 62 -pin tmonen
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 62 -pin tmonen
 setPinAssignMode -pinEditInBatch false
 getPinAssignMode -pinEditInBatch -quiet
 setPinAssignMode -pinEditInBatch true
@@ -281,98 +155,11 @@ editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -
 setPinAssignMode -pinEditInBatch false
 getPinAssignMode -pinEditInBatch -quiet
 setPinAssignMode -pinEditInBatch true
-editPin -use POWER -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 1 -layer 4 -spreadType start -spacing 1.2 -offsetStart 10 -pin {dgnd dvdd}
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -use POWER -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 1 -layer 4 -spreadType start -spacing 1.2 -offsetStart 10 -pin {dgnd dvdd}
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
 editPin -use POWER -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 1 -layer 4 -spreadType start -spacing 2 -offsetStart 10 -pin {dgnd dvdd}
 setPinAssignMode -pinEditInBatch false
 getPinAssignMode -pinEditInBatch -quiet
 setPinAssignMode -pinEditInBatch true
-editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -spreadDirection clockwise -side Left -layer 3 -spreadType side -pin {{vcutoff[0]} {vcutoff[1]} {vcutoff[2]} {vcutoff[3]} {vcutoff[4]} {vcutoff[5]} {vcutoff[6]} {vcutoff[7]} {vpreset[0]} {vpreset[1]} {vpreset[2]} {vpreset[3]} {vpreset[4]} {vpreset[5]} {vpreset[6]} {vpreset[7]} {tempmin[0]} {tempmin[1]} {tempmin[2]} {tempmin[3]} {tempmin[4]} {tempmin[5]} {tempmin[6]} {tempmin[7]} {tempmax[0]} {tempmax[1]} {tempmax[2]} {tempmax[3]} {tempmax[4]} {tempmax[5]} {tempmax[6]} {tempmax[7]} {tmax[0]} {tmax[1]} {tmax[2]} {tmax[3]} {tmax[4]} {tmax[5]} {tmax[6]} {tmax[7]} vtok {iend[0]} {iend[1]} {iend[2]} {iend[3]} {iend[4]} {iend[5]} {iend[6]} {iend[7]}}
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -spreadDirection counterclockwise -side Left -layer 3 -spreadType side -pin {{vcutoff[0]} {vcutoff[1]} {vcutoff[2]} {vcutoff[3]} {vcutoff[4]} {vcutoff[5]} {vcutoff[6]} {vcutoff[7]} {vpreset[0]} {vpreset[1]} {vpreset[2]} {vpreset[3]} {vpreset[4]} {vpreset[5]} {vpreset[6]} {vpreset[7]} {tempmin[0]} {tempmin[1]} {tempmin[2]} {tempmin[3]} {tempmin[4]} {tempmin[5]} {tempmin[6]} {tempmin[7]} {tempmax[0]} {tempmax[1]} {tempmax[2]} {tempmax[3]} {tempmax[4]} {tempmax[5]} {tempmax[6]} {tempmax[7]} {tmax[0]} {tmax[1]} {tmax[2]} {tmax[3]} {tmax[4]} {tmax[5]} {tmax[6]} {tmax[7]} vtok {iend[0]} {iend[1]} {iend[2]} {iend[3]} {iend[4]} {iend[5]} {iend[6]} {iend[7]}}
-set ptngSprNoRefreshPins 1
-setPtnPinStatus -cell BATCHARGERctr -pin {vcutoff[0]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {vcutoff[1]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {vcutoff[2]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {vcutoff[3]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {vcutoff[4]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {vcutoff[5]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {vcutoff[6]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {vcutoff[7]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {vpreset[0]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {vpreset[1]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {vpreset[2]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {vpreset[3]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {vpreset[4]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {vpreset[5]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {vpreset[6]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {vpreset[7]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tempmin[0]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tempmin[1]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tempmin[2]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tempmin[3]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tempmin[4]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tempmin[5]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tempmin[6]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tempmin[7]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tempmax[0]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tempmax[1]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tempmax[2]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tempmax[3]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tempmax[4]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tempmax[5]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tempmax[6]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tempmax[7]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tmax[0]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tmax[1]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tmax[2]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tmax[3]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tmax[4]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tmax[5]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tmax[6]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {tmax[7]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin vtok -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {iend[0]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {iend[1]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {iend[2]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {iend[3]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {iend[4]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {iend[5]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {iend[6]} -status unplaced -silent
-setPtnPinStatus -cell BATCHARGERctr -pin {iend[7]} -status unplaced -silent
-set ptngSprNoRefreshPins 0
-ptnSprRefreshPinsAndBlockages
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -spreadDirection counterclockwise -side Left -layer 1 -spreadType side -pin {{vcutoff[0]} {vcutoff[1]} {vcutoff[2]} {vcutoff[3]} {vcutoff[4]} {vcutoff[5]} {vcutoff[6]} {vcutoff[7]} {vpreset[0]} {vpreset[1]} {vpreset[2]} {vpreset[3]} {vpreset[4]} {vpreset[5]} {vpreset[6]} {vpreset[7]} {tempmin[0]} {tempmin[1]} {tempmin[2]} {tempmin[3]} {tempmin[4]} {tempmin[5]} {tempmin[6]} {tempmin[7]} {tempmax[0]} {tempmax[1]} {tempmax[2]} {tempmax[3]} {tempmax[4]} {tempmax[5]} {tempmax[6]} {tempmax[7]} {tmax[0]} {tmax[1]} {tmax[2]} {tmax[3]} {tmax[4]} {tmax[5]} {tmax[6]} {tmax[7]} vtok {iend[0]} {iend[1]} {iend[2]} {iend[3]} {iend[4]} {iend[5]} {iend[6]} {iend[7]}}
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
 editPin -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 0 -layer 3 -spreadType center -spacing 0.8 -pin {{vcutoff[0]} {vcutoff[1]} {vcutoff[2]} {vcutoff[3]} {vcutoff[4]} {vcutoff[5]} {vcutoff[6]} {vcutoff[7]} {vpreset[0]} {vpreset[1]} {vpreset[2]} {vpreset[3]} {vpreset[4]} {vpreset[5]} {vpreset[6]} {vpreset[7]} {tempmin[0]} {tempmin[1]} {tempmin[2]} {tempmin[3]} {tempmin[4]} {tempmin[5]} {tempmin[6]} {tempmin[7]} {tempmax[0]} {tempmax[1]} {tempmax[2]} {tempmax[3]} {tempmax[4]} {tempmax[5]} {tempmax[6]} {tempmax[7]} {tmax[0]} {tmax[1]} {tmax[2]} {tmax[3]} {tmax[4]} {tmax[5]} {tmax[6]} {tmax[7]} vtok {iend[0]} {iend[1]} {iend[2]} {iend[3]} {iend[4]} {iend[5]} {iend[6]} {iend[7]}}
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -use CLOCK -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.8 -offsetStart 10 -pin clk
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -use CLOCK -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.4 -offsetStart 10 -pin clk
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -use CLOCK -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.4 -offsetStart 10 -pin clk
-setPinAssignMode -pinEditInBatch false
-getPinAssignMode -pinEditInBatch -quiet
-setPinAssignMode -pinEditInBatch true
-editPin -use CLOCK -pinWidth 0.2 -pinDepth 0.52 -snap USERGRID -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 0.4 -offsetStart 10 -pin clk
 setPinAssignMode -pinEditInBatch false
 getPinAssignMode -pinEditInBatch -quiet
 setPinAssignMode -pinEditInBatch true
