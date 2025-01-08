@@ -72,6 +72,7 @@ setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_sho
 addRing -nets {dgnd dvdd} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 0.4 bottom 0.4 left 0.4 right 0.4} -spacing {top 0.4 bottom 0.4 left 0.4 right 0.4} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
 setSrouteMode -viaConnectToShape { noshape }
 sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1(1) metal8(8) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal8(8) } -nets { dgnd dvdd } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1(1) metal8(8) }
+verifyGeometry
 fit
 set ptngSprNoRefreshPins 1
 setPtnPinStatus -cell BATCHARGERctr -pin cc -status unplaced -silent
@@ -223,6 +224,7 @@ redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/nu
 timeDesign -postRoute -pathReports -drvReports -slackReports -numPaths 50 -prefix BATCHARGERctr_postRoute -outDir timingReports
 getFillerMode -quiet
 addFiller -cell FILLER8EHD FILLER64EHD FILLER4EHD FILLER3HD FILLER32EHD FILLER2HD FILLER1HD FILLER16EHD -prefix FILLER
+verifyGeometry
 verifyConnectivity
 checkDesign -all
 saveNetlist BATCHARGERctr_pr.v
